@@ -1,0 +1,130 @@
+{
+  "header": {
+    "name": "Yash Revdiwala",
+    "title": "Software Development Engineer",
+    "phone": "+91 90163 65650",
+    "email": "yash.yr.2493@gmail.com",
+    "location": "Surat, Gujarat, India",
+    "linkedin": "https://linkedin.com/in/yash-revdiwala",
+    "github": "https://github.com/yashrevdiwala"
+  },
+  "skills": [
+    {
+      "label": "Languages",
+      "values": "TypeScript, JavaScript (ES6+), HTML5, CSS3, GraphQL"
+    },
+    {
+      "label": "Frameworks",
+      "values": "React, Next.js, React Native, Express.js, Hono, Expo, Tailwind"
+    },
+    {
+      "label": "Backend & APIs",
+      "values": "Node.js, REST APIs, GraphQL, WebSockets, JWT Authentication"
+    },
+    {
+      "label": "Libraries & State",
+      "values": "React Query, Redux/Zustand, React Navigation, Axios, Reanimated"
+    },
+    {
+      "label": "Databases & ORMs",
+      "values": "PostgreSQL, MongoDB, MySQL, Redis, Prisma, Drizzle"
+    },
+    {
+      "label": "Infrastructure & Tools",
+      "values": "Docker, Nginx, PM2, AWS EC2, Vercel, Git, Firebase"
+    },
+    {
+      "label": "Platforms",
+      "values": "Web, iOS, Android"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Bilipatra",
+      "location": "Surat, India",
+      "role": "JavaScript Developer",
+      "date": "Dec 2025 - Present",
+      "bullets": [
+        "Architected a multi-tenant B2B SaaS platform serving isolated workspaces, leveraging Next.js 16 App Router, React 19, and React Compiler for optimal server-side rendering and build-time optimization.",
+        "Engineered an enterprise-grade RBAC engine eliminating client-server permission drift, implementing custom hooks synchronized with Zustand and Better Auth for instant UI state reflection.",
+        "Streamlined checkout cycles by 30%, building high-performance e-commerce logic for real-time cart calculations, dynamic tiered promo and discount engines, SKU inventory reservation, and refund lifecycles.",
+        "Engineered an asynchronous order processing pipeline using Hono, BullMQ, and Redis, orchestrating multi-stage queues for order validation, payment webhooks, and notifications with automated retries.",
+        "Reduced latency on high-density catalog views by 40%, implementing server-side paginated TanStack Data Tables supporting multi-column sorting and custom faceted filtering.",
+        "Engineered real-time order state propagation using WebSocket (Socket.IO), enabling sub-second live tracking updates to clients and reducing customer support response time by around 30%."
+      ]
+    },
+    {
+      "company": "Bilipatra",
+      "location": "Surat, India",
+      "role": "JavaScript Developer",
+      "date": "May 2025 - Dec 2025",
+      "bullets": [
+        "Designed and deployed a full-featured Recruitment Management System (RMS) managing end-to-end hiring workflows including applicant tracking, interview scheduling, and offer management.",
+        "Engineered multi-channel lead ingestion pipelines (WhatsApp, inbound calls, web forms) feeding a centralized CRM, improving lead capture efficiency by 35% and enabling unified cross-channel tracking.",
+        "Applied Redis caching strategies for high-read campaign metrics and lead data, reducing database read load by 45% and improving dashboard response performance.",
+        "Built and documented RESTful API endpoints with Express.js, implementing pagination, filtering, sorting, and optimized query patterns across complex MySQL relational datasets."
+      ]
+    },
+    {
+      "company": "Biz-Insights",
+      "location": "Surat, India",
+      "role": "Web Developer",
+      "date": "Sep 2024 - Dec 2025",
+      "bullets": [
+        "Built an FFmpeg-powered HLS video transcoding pipeline using BullMQ job queues and Redis for distributed job state management, enabling non-blocking concurrent video processing at scale.",
+        "Deployed Socket.IO real-time communication infrastructure handling concurrent WebSocket connections across multiple production applications.",
+        "Developed BullMQ background workers for async workloads including email delivery, media transcoding, and report generation, decoupling processing from request-response cycles and improving throughput.",
+        "Configured Nginx as a reverse proxy with SSL termination and deployed Dockerized Node.js services on AWS EC2, managing environment-based configuration for production deployments."
+      ]
+    },
+    {
+      "company": "SetBlue",
+      "location": "Surat, India",
+      "role": "Full-Stack Developer",
+      "date": "Dec 2023 - Jun 2024",
+      "bullets": [
+        "Engineered a full-featured e-commerce platform with Next.js and Node.js using server-side rendering (SSR), improving SEO visibility and reducing initial page load time by 35%.",
+        "Built an internal admin dashboard supporting real-time inventory management, order tracking, and business analytics, reducing manual operational overhead by 25%.",
+        "Integrated RESTful API endpoints for third-party payment and logistics providers, implementing robust error handling and data validation between frontend and backend services."
+      ]
+    },
+    {
+      "company": "Success Innovative Technologies Pvt. Ltd.",
+      "location": "Surat, India",
+      "role": "Backend Developer",
+      "date": "May 2023 - Sep 2023",
+      "bullets": [
+        "Developed and shipped 6 production web applications using PHP, MySQL, and SQLite, delivering inventory management systems and user portals with full CRUD functionality.",
+        "Optimized SQL queries and application-level data access patterns, reducing page load times and improving database throughput across all deployed applications."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Bilipatra Order Management System (OMS)",
+      "meta": "Next.js 16, Hono, Node.js, BullMQ, PostgreSQL",
+      "desc": "Engineered an enterprise B2B e-commerce and OMS pipeline handling dynamic cart calculations, multi-tiered discounts, organization-based RBAC, and complex SKU inventory tracking. Architected an asynchronous background queue system using Hono, BullMQ, and Redis for non-blocking order validation, robust payment webhook processing, and automated refund lifecycles."
+    },
+    {
+      "name": "Enterprise Asset Scanner",
+      "meta": "React Native, TypeScript, TanStack Query, MMKV",
+      "desc": "Engineered a secure, cross-platform mobile scanner for iOS and Android using React Native, enabling real-time barcode and QR code hardware tracking via React Native Vision Camera. Optimized credential persistence and startup auth checks by implementing Axios interceptors and React Native MMKV for synchronous, near-zero-latency token reads."
+    },
+    {
+      "name": "Enterprise CRM Platform",
+      "meta": "Node.js, Express, MySQL, Redis, JWT",
+      "desc": "Architected the backend for a centralized CRM utilized by sales teams, featuring JWT-based authentication with granular RBAC enforcing role-scoped access control. Designed normalized relational schemas in PostgreSQL and MySQL for CRM data, enforcing referential integrity via foreign key constraints and composite indexing strategies."
+    }
+  ],
+  "opensource": {
+    "community": [],
+    "published": []
+  },
+  "education": [
+    {
+      "institution": "Uka Tarsadia University (UTU) – AMTICS",
+      "degree": "B.Tech in Computer Science & Engineering",
+      "date": "Sep 2021 - May 2025"
+    }
+  ]
+}

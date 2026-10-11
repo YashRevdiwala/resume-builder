@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Yash Revdiwala - Software Development Engineer | 3+ Years Experience
+    </title>
+
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>"
+    />
+
+    <meta
+      name="description"
+      content="Yash Revdiwala: Software Development Engineer with 3+ years of experience building scalable SaaS, CRM, and mobile-first platforms using Next.js, React Native, Node.js, and cloud-native backend systems."
+    />
+    <meta
+      name="keywords"
+      content="Yash Revdiwala, Software Development Engineer, JavaScript Developer, TypeScript, React, Next.js, React Native, Node.js, Surat Developer, AWS, Vercel"
+    />
+    <meta name="author" content="Yash Revdiwala" />
+    <meta name="theme-color" content="#0b5cff" />
+    <link rel="canonical" href="https://samarth-sheth.github.io/" />
+
+    <meta property="og:type" content="profile" />
+    <meta
+      property="og:site_name"
+      content="Yash Revdiwala - Developer Portfolio"
+    />
+    <meta property="og:url" content="https://github.com/yashrevdiwala" />
+    <meta
+      property="og:title"
+      content="Yash Revdiwala — Software Development Engineer"
+    />
+    <meta
+      property="og:description"
+      content="Software Development Engineer experienced in end-to-end development, delivering secure REST APIs, scalable backend systems, and high-performance frontend architectures."
+    />
+    <meta name="twitter:card" content="summary" />
+
+    <meta name="ai:profile_type" content="software_developer" />
+    <meta name="ai:name" content="Yash Revdiwala" />
+    <meta
+      name="ai:expertise"
+      content="TypeScript, React, Next.js, React Native, Node.js, Full Stack Development, SaaS, REST APIs"
+    />
+    <meta name="ai:experience_years" content="3+" />
+    <meta name="job:location" content="Surat, Gujarat, India" />
+    <meta name="job:type" content="Full-time, Contract, Remote" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="font-serif-headings">
+    <div class="app-container">
+      <!-- Sidebar Control Panel -->
+      <aside class="sidebar no-print">
+        <div class="sidebar-header">
+          <h2>Resume Architect</h2>
+          <p>Live Customizer & Builder</p>
+        </div>
+
+        <div class="quick-actions">
+          <button
+            class="btn btn-dark"
+            onclick="
+              setPrintTitle()
+              window.print()
+            "
+          >
+            🖨️ Print PDF
+          </button>
+          <button class="btn btn-blue" onclick="exportJSON()">
+            💾 Save JSON
+          </button>
+        </div>
+
+        <!-- Global Reset Button outside of any accordions -->
+        <div class="sidebar-reset-container">
+          <button
+            class="btn btn-green reset-btn-global"
+            onclick="resetToDefault()"
+            style="
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 6px;
+            "
+          >
+            🔄 Reset to Default Profile
+          </button>
+        </div>
+
+        <div class="sidebar-sections">
+          <!-- Accordion 1: Theme & Layout -->
+          <div class="accordion-item">
+            <button
+              class="accordion-trigger active"
+              onclick="toggleAccordion(this)"
+            >
+              <span>🎨 Theme & Layout</span>
+              <span class="chevron">▼</span>
+            </button>
+            <div class="accordion-content open">
+              <div class="form-group">
+                <label for="primary-color">Primary Color</label>
+                <div
+                  style="
+                    display: flex;
+                    gap: 8px;
+                    align-items: center;
+                    margin-bottom: 6px;
+                  "
+                >
+                  <input
+                    type="color"
+                    id="primary-color"
+                    value="#1e3a5f"
+                    oninput="updatePrimaryColor(this.value)"
+                  />
+                  <span
+                    id="color-hex"
+                    style="font-size: 11px; font-family: monospace"
+                    >#1e3a5f</span
+                  >
+                </div>
+                <div class="preset-colors-grid">
+                  <div
+                    class="color-preset active"
+                    style="background: #1e3a5f"
+                    onclick="updatePrimaryColor('#1e3a5f')"
+                    title="Classic Navy"
+                  ></div>
+                  <div
+                    class="color-preset"
+                    style="background: #0d9488"
+                    onclick="updatePrimaryColor('#0d9488')"
+                    title="Teal"
+                  ></div>
+                  <div
+                    class="color-preset"
+                    style="background: #0284c7"
+                    onclick="updatePrimaryColor('#0284c7')"
+                    title="Sky Blue"
+                  ></div>
+                  <div
+                    class="color-preset"
+                    style="background: #4f46e5"
+                    onclick="updatePrimaryColor('#4f46e5')"
+                    title="Indigo"
+                  ></div>
+                  <div
+                    class="color-preset"
+                    style="background: #b91c1c"
+                    onclick="updatePrimaryColor('#b91c1c')"
+                    title="Ruby Red"
+                  ></div>
+                  <div
+                    class="color-preset"
+                    style="background: #15803d"
+                    onclick="updatePrimaryColor('#15803d')"
+                    title="Forest Green"
+                  ></div>
+                  <div
+                    class="color-preset"
+                    style="background: #4b5563"
+                    onclick="updatePrimaryColor('#4b5563')"
+                    title="Slate"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="font-preset">Typography Preset</label>
+                <select
+                  id="font-preset"
+                  class="form-control"
+                  onchange="updateFontPreset(this.value)"
+                >
+                  <option value="serif-headings">
+                    Serif Headings, Sans Body
+                  </option>
+                  <option value="sans-serif">Clean Modern (All Sans)</option>
+                  <option value="serif">Elegant Classic (All Serif)</option>
+                  <option value="mono">Technical (All Monospace)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label
+                  >Base Font Size: <span id="val-font-size">10.0px</span></label
+                >
+                <div class="slider-group">
+                  <input
+                    type="range"
+                    id="slider-font-size"
+                    min="8"
+                    max="14"
+                    step="0.2"
+                    value="10.0"
+                    oninput="
+                      updateLayoutProperty(
+                        'base-font-size',
+                        this.value + 'px',
+                        'val-font-size',
+                        this.value + 'px',
+                      )
+                    "
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label
+                  >Line Spacing: <span id="val-line-height">1.30</span></label
+                >
+                <div class="slider-group">
+                  <input
+                    type="range"
+                    id="slider-line-height"
+                    min="1.1"
+                    max="1.8"
+                    step="0.05"
+                    value="1.30"
+                    oninput="
+                      updateLayoutProperty(
+                        'line-height',
+                        this.value,
+                        'val-line-height',
+                        this.value,
+                      )
+                    "
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label
+                  >Page Margins: <span id="val-page-margin">12mm</span></label
+                >
+                <div class="slider-group">
+                  <input
+                    type="range"
+                    id="slider-page-margin"
+                    min="5"
+                    max="25"
+                    step="1"
+                    value="12"
+                    oninput="
+                      updateLayoutProperty(
+                        'page-padding',
+                        this.value + 'mm',
+                        'val-page-margin',
+                        this.value + 'mm',
+                      )
+                    "
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label
+                  >Section Gap: <span id="val-section-gap">10px</span></label
+                >
+                <div class="slider-group">
+                  <input
+                    type="range"
+                    id="slider-section-gap"
+                    min="4"
+                    max="25"
+                    step="1"
+                    value="10"
+                    oninput="
+                      updateLayoutProperty(
+                        'section-gap',
+                        this.value + 'px',
+                        'val-section-gap',
+                        this.value + 'px',
+                      )
+                    "
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Job Spacing: <span id="val-job-gap">10px</span></label>
+                <div class="slider-group">
+                  <input
+                    type="range"
+                    id="slider-job-gap"
+                    min="4"
+                    max="25"
+                    step="1"
+                    value="10"
+                    oninput="
+                      updateLayoutProperty(
+                        'job-gap',
+                        this.value + 'px',
+                        'val-job-gap',
+                        this.value + 'px',
+                      )
+                    "
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Section Visibility</label>
+                <div class="toggle-group">
+                  <label class="toggle-item">
+                    <input
+                      type="checkbox"
+                      id="toggle-profile"
+                      checked
+                      onchange="toggleSection('section-profile', this.checked)"
+                    />
+                    Profile Summary
+                  </label>
+                  <label class="toggle-item">
+                    <input
+                      type="checkbox"
+                      id="toggle-skills"
+                      checked
+                      onchange="toggleSection('section-skills', this.checked)"
+                    />
+                    Skills Grid
+                  </label>
+                  <label class="toggle-item">
+                    <input
+                      type="checkbox"
+                      id="toggle-experience"
+                      checked
+                      onchange="
+                        toggleSection('section-experience', this.checked)
+                      "
+                    />
+                    Work Experience
+                  </label>
+                  <label class="toggle-item">
+                    <input
+                      type="checkbox"
+                      id="toggle-projects"
+                      checked
+                      onchange="toggleSection('section-projects', this.checked)"
+                    />
+                    Key Projects
+                  </label>
+                  <label class="toggle-item">
+                    <input
+                      type="checkbox"
+                      id="toggle-opensource"
+                      checked
+                      onchange="
+                        toggleSection('section-opensource', this.checked)
+                      "
+                    />
+                    Open Source
+                  </label>
+                  <label class="toggle-item">
+                    <input
+                      type="checkbox"
+                      id="toggle-education"
+                      checked
+                      onchange="
+                        toggleSection('section-education', this.checked)
+                      "
+                    />
+                    Education
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion 2: Header & Contacts -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" onclick="toggleAccordion(this)">
+              <span>👤 Header & Contact</span>
+              <span class="chevron">▼</span>
+            </button>
+            <div class="accordion-content">
+              <div id="header-editor-container"></div>
+            </div>
+          </div>
+
+          <!-- Accordion 3: Skills -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" onclick="toggleAccordion(this)">
+              <span>🛠️ Skills List</span>
+              <span class="chevron">▼</span>
+            </button>
+            <div class="accordion-content">
+              <div id="skills-editor-list" class="editor-list"></div>
+              <button class="add-btn" onclick="addNewListItem('skills')">
+                ➕ Add Skill Group
+              </button>
+            </div>
+          </div>
+
+          <!-- Accordion 4: Work Experience -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" onclick="toggleAccordion(this)">
+              <span>💼 Work Experience</span>
+              <span class="chevron">▼</span>
+            </button>
+            <div class="accordion-content">
+              <div id="experience-editor-list" class="editor-list"></div>
+              <button class="add-btn" onclick="addNewListItem('experience')">
+                ➕ Add Work Experience
+              </button>
+            </div>
+          </div>
+
+          <!-- Accordion 5: Key Projects -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" onclick="toggleAccordion(this)">
+              <span>🚀 Key Projects</span>
+              <span class="chevron">▼</span>
+            </button>
+            <div class="accordion-content">
+              <div id="projects-editor-list" class="editor-list"></div>
+              <button class="add-btn" onclick="addNewListItem('projects')">
+                ➕ Add Key Project
+              </button>
+            </div>
+          </div>
+
+          <!-- Accordion 6: Open Source Contributions -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" onclick="toggleAccordion(this)">
+              <span>🌐 Open Source</span>
+              <span class="chevron">▼</span>
+            </button>
+            <div class="accordion-content">
+              <div id="opensource-editor-list" class="editor-list"></div>
+              <button class="add-btn" onclick="addNewListItem('opensource')">
+                ➕ Add Open Source Item
+              </button>
+            </div>
+          </div>
+
+          <!-- Accordion 7: Education -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" onclick="toggleAccordion(this)">
+              <span>🎓 Education</span>
+              <span class="chevron">▼</span>
+            </button>
+            <div class="accordion-content">
+              <div id="education-editor-list" class="editor-list"></div>
+              <button class="add-btn" onclick="addNewListItem('education')">
+                ➕ Add Education Item
+              </button>
+            </div>
+          </div>
+
+          <!-- Accordion 8: Data Manager (JSON) -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" onclick="toggleAccordion(this)">
+              <span>💾 Data Manager (JSON)</span>
+              <span class="chevron">▼</span>
+            </button>
+            <div class="accordion-content">
+              <div class="form-group">
+                <label>Raw Resume JSON</label>
+                <textarea
+                  id="raw-json-editor"
+                  class="form-control"
+                  style="
+                    min-height: 150px;
+                    font-family: monospace;
+                    font-size: 10px;
+                  "
+                  oninput="handleRawJsonInput(this.value)"
+                ></textarea>
+                <span
+                  id="json-error"
+                  style="
+                    color: #ef4444;
+                    font-size: 10px;
+                    display: none;
+                    margin-top: 4px;
+                  "
+                  >Invalid JSON format.</span
+                >
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 8px">
+                <button
+                  class="btn btn-gray"
+                  style="width: 100%; min-width: unset"
+                  onclick="document.getElementById('file-loader').click()"
+                >
+                  📤 Import JSON File
+                </button>
+                <input
+                  type="file"
+                  id="file-loader"
+                  style="display: none"
+                  accept=".json"
+                  onchange="importJSONFile(event)"
+                />
+                <button
+                  class="btn btn-blue"
+                  style="width: 100%; min-width: unset"
+                  onclick="exportJSON()"
+                >
+                  📥 Download JSON
+                </button>
+                <button
+                  class="btn btn-linkedin"
+                  style="width: 100%; min-width: unset"
+                  onclick="copyJSONToClipboard()"
+                >
+                  📋 Copy to Clipboard
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Preview Area -->
+      <div class="preview-area">
+        <div
+          id="fallback-notification"
+          class="notification no-print"
+          style="display: none"
+        >
+          <span
+            >⚠️ Running locally or CORS blocked! Loaded offline template. You
+            can customize here, copy, or download your custom JSON!</span
+          >
+        </div>
+
+        <main class="resume" id="resume-content">
+          <div class="header" id="header-container"></div>
+
+          <div class="section" id="section-profile">
+            <div class="section-title">Profile</div>
+            <p class="summary-text" id="summary-container"></p>
+          </div>
+
+          <div class="section" id="section-skills">
+            <div class="section-title">Skills</div>
+            <div class="skills-grid" id="skills-container"></div>
+          </div>
+
+          <div class="section" id="section-experience">
+            <div class="section-title">Work Experience</div>
+            <div id="experience-container"></div>
+          </div>
+
+          <div class="section" id="section-projects">
+            <div class="section-title">Key Projects</div>
+            <div class="projects-grid" id="projects-container"></div>
+          </div>
+
+          <div class="section" id="section-opensource">
+            <div class="section-title">Open Source Contributions</div>
+            <div id="opensource-container"></div>
+          </div>
+
+          <div class="section" id="section-education">
+            <div class="section-title">Education</div>
+            <div id="education-container"></div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Sticky Social Action Bar -->
+    <div class="social-float-bar no-print">
+      <button class="btn btn-social btn-copy-email" onclick="copyEmail()">
+        <span class="icon">📋</span> Copy Email
+      </button>
+      <button class="btn btn-social btn-write-email" onclick="writeEmail()">
+        <span class="icon">✉️</span> Write Email
+      </button>
+      <button class="btn btn-social btn-call-now" onclick="callNow()">
+        <span class="icon">📞</span> Call Now
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
